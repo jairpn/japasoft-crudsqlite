@@ -14,15 +14,6 @@
 *.ppk
 *.elf
 
-# Lazarus project files
-*.lps
-*.lpr
-*.lpi
-*.lfm
-*.pas
-*.pp
-*.inc
-
 # Backup and temporary
 *.bak
 *.~*
@@ -38,29 +29,8 @@ lib/
 backup/
 __history/
 __recovery/
-lib64/
-win64/
-win32/
-linux/
-darwin/
 
-# Database files (optional, remove if you want to include a seed database)
+# Database files
 *.sqlite
 *.sqlite3
 *.db
-
-# Compiled executable manifests
-*.exe.manifest
-
-# Configuration files (user-specific)
-*.dsk
-*.fpc.cfg
-
-# Package output
-*.ppl
-*.ppu
-
-# Debug info
-*.dbg
-*.tds
-*.map

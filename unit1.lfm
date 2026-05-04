@@ -1,0 +1,181 @@
+object Form1: TForm1
+  Left = 350
+  Height = 540
+  Top = 250
+  Width = 676
+  Caption = 'CRUD - SQLITE'
+  ClientHeight = 540
+  ClientWidth = 676
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  object Panel1: TPanel
+    Left = 24
+    Height = 74
+    Top = 16
+    Width = 624
+    ClientHeight = 74
+    ClientWidth = 624
+    TabOrder = 0
+    object Edit1: TEdit
+      Left = 16
+      Height = 23
+      Top = 24
+      Width = 472
+      TabOrder = 0
+    end
+    object btnPesquisar: TButton
+      Left = 521
+      Height = 25
+      Top = 22
+      Width = 75
+      Caption = 'Pesquisar'
+      TabOrder = 1
+      OnClick = btnPesquisarClick
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 272
+    Top = 104
+    Width = 624
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 1
+  end
+  object Panel2: TPanel
+    Left = 24
+    Height = 82
+    Top = 392
+    Width = 624
+    ClientHeight = 82
+    ClientWidth = 624
+    TabOrder = 2
+    object edtNome: TEdit
+      Left = 16
+      Height = 23
+      Top = 32
+      Width = 208
+      TabOrder = 0
+    end
+    object edtEmail: TEdit
+      Left = 264
+      Height = 23
+      Top = 32
+      Width = 200
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 24
+      Height = 15
+      Top = 8
+      Width = 33
+      Caption = 'Nome'
+    end
+    object Label2: TLabel
+      Left = 272
+      Height = 15
+      Top = 8
+      Width = 34
+      Caption = 'E-mail'
+    end
+    object Label3: TLabel
+      Left = 488
+      Height = 15
+      Top = 8
+      Width = 45
+      Caption = 'Telefone'
+    end
+  end
+  object Panel3: TPanel
+    Left = 24
+    Height = 42
+    Top = 496
+    Width = 624
+    ClientHeight = 42
+    ClientWidth = 624
+    TabOrder = 3
+    object btnAlterar: TButton
+      Left = 128
+      Height = 25
+      Top = 0
+      Width = 75
+      Caption = 'Alterar'
+      TabOrder = 0
+      OnClick = btnAlterarClick
+    end
+    object btnDeletar: TButton
+      Left = 231
+      Height = 25
+      Top = 0
+      Width = 75
+      Caption = 'Deletar'
+      TabOrder = 1
+      OnClick = btnDeletarClick
+    end
+    object btnCancelar: TButton
+      Left = 424
+      Height = 25
+      Top = 0
+      Width = 75
+      Caption = 'Cancelar'
+      TabOrder = 2
+      OnClick = btnCancelarClick
+    end
+    object btnSalvar: TButton
+      Left = 512
+      Height = 25
+      Top = 0
+      Width = 75
+      Caption = 'Salvar'
+      TabOrder = 3
+      OnClick = btnSalvarClick
+    end
+  end
+  object edtTelefone: TEdit
+    Left = 504
+    Height = 23
+    Top = 424
+    Width = 128
+    TabOrder = 4
+  end
+  object btnInserir: TButton
+    Left = 53
+    Height = 25
+    Top = 495
+    Width = 75
+    Caption = 'Inserir'
+    TabOrder = 5
+    OnClick = btnInserirClick
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'D:\PROJETOS\CRUD_SQLITE\dados.db'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    AlwaysUseBigint = False
+    Left = 78
+    Top = 106
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 78
+    Top = 248
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    Left = 72
+    Top = 176
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 78
+    Top = 337
+  end
+end
