@@ -1,0 +1,66 @@
+# Compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.or
+*.ppu
+*.a
+*.dbg
+*.dcu
+*.res
+*.compiled
+*.ppk
+*.elf
+
+# Lazarus project files
+*.lps
+*.lpr
+*.lpi
+*.lfm
+*.pas
+*.pp
+*.inc
+
+# Backup and temporary
+*.bak
+*.~*
+*.backup
+*.old
+*.tmp
+*~
+*.swp
+*.swo
+
+# Directories
+lib/
+backup/
+__history/
+__recovery/
+lib64/
+win64/
+win32/
+linux/
+darwin/
+
+# Database files (optional, remove if you want to include a seed database)
+*.sqlite
+*.sqlite3
+*.db
+
+# Compiled executable manifests
+*.exe.manifest
+
+# Configuration files (user-specific)
+*.dsk
+*.fpc.cfg
+
+# Package output
+*.ppl
+*.ppu
+
+# Debug info
+*.dbg
+*.tds
+*.map
